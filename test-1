@@ -1,1 +1,8 @@
 import pandas as pd
+from sklearn.naive_bayes import GaussianNB #高斯贝叶斯（朴素贝叶斯）
+clf = GaussianNB()
+clf.fit(x_train,y_train)
+pred = clf.predict(x_test)
+from sklearn.metrics import acuuracy_score 
+print acuuracy_score(pred, labels_test)#判断准确性（非内置函数）
+clf.score(x_test,y_test) #判断准确性（内置函数）
