@@ -1,0 +1,3 @@
+any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
+any('123')
+true
